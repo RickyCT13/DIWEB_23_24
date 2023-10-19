@@ -1,0 +1,21 @@
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*  Especificidad en CSS para alterar el comportamiento */
+
+table, tr, th, td {
+    border-collapse: collapse;
+}
+
+tr:nth-child(1) {
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(1) {
+    border-bottom: 1px solid grey;
+}
+
+td {
+    border-bottom: 1px solid grey;
+}

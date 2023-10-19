@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teoría HTML I</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Teoría HTML I</h1>
+
+        <p>
+            Esta es mi primera página con HTML, un poco fea, pero bueno, peor es
+            morirse. (Factores)
+        </p>
+    </header>
+
+    <section>
+        <table>
+            <caption>
+                Título de mi tabla
+            </caption>
+            <tr>
+                <!-- Fila, Columna -->
+                <th></th>
+                <th colspan="2">col span</th>
+                <th>col2</th>
+            </tr>
+            <tr>
+                <th rowspan="3">row span</th>
+                <td>0,0</td>
+                <td>0,1</td>
+                <td>0,2</td>
+            </tr>
+            <tr>
+                <td>1,0</td>
+                <td>1,1</td>
+                <td>1,2</td>
+            </tr>
+            <tr>
+                <td>2,0</td>
+                <td>2,1</td>
+                <td>2,2</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <h3>Footer de la página</h3>
+    </footer>
+
+    <!-- 
+        Sintaxis de Emmet
+        
+        etiquetaMadre > etiquetaHija - El > indica que un elemento es hijo de otro.
+        etiqueta1 + etiqueta2 - Hermanos / Ambas en el mismo nivel.
+        etiqueta{texto} - las llaves indican texto dentro de la etiqueta.
+        etiqueta * numero - El nº de etiquetas deseado.
+    -->
+
+
+</body>
+
+</html>
