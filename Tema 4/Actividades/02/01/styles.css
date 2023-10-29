@@ -1,0 +1,25 @@
+.table__tr--bottom {
+    border-bottom: 2px, solid black;
+}
+
+.table__th--bottom-right {
+    border-bottom: 2px, solid black;
+    border-right: 2px, solid black;
+}
+
+.table__th--right {
+    border-right: 2px, solid black;
+}
+
+.table__th--bottom {
+    border-bottom: 2px, solid black;
+}
+
+.table__th--right {
+    border-right: 2px, solid black;
+}
+
+.table__td--bottom-right {
+    border-bottom: 1px, solid black;
+    border-right: 1px, solid black;
+}
