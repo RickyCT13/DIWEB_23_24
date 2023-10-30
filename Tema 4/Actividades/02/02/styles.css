@@ -6,6 +6,19 @@ header {
     color: blue;
 }
 
+thead, tr {
+    background-color: red;
+    height: 40px;
+}
+
+thead, tr, th {
+    width: 60px;
+}
+
+tr {
+    height: 30px;
+}
+
 .h2--alignCenter, .p--alignCenter {
     text-align: center;
 }
@@ -15,11 +28,86 @@ header {
     justify-content: center;
 }
 
-.section__table--collapseBorders { /* Especificidad de etiqueta HTML */
+.section__table--pokemonTypesTable {
     border-collapse: collapse;
+    width: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 
 .table__thead--underlined {
     border-bottom: 2px solid black;
 
+}
+
+.table__tr--typeSteel {
+    background-color: slategray;
+}
+
+.table__tr--typeFlying {
+    background-color: cornflowerblue;
+}
+
+.table__tr--typeWater {
+    background-color: blue;
+}
+
+.table__tr--typeIce {
+    background-color: cyan;
+}
+
+.table__tr--typeGrass {
+    background-color: green;
+}
+
+.table__tr--typeBug {
+    background-color: mediumseagreen;
+}
+
+.table__tr--typeElectric {
+    background-color: lime;
+}
+
+.table__tr--typeNormal {
+    background-color: bisque;
+}
+
+.table__tr--typeRock {
+    background-color: peru;
+}
+
+.table__tr--typeGround {
+    background-color: chocolate;
+}
+
+.table__tr--typeFire {
+    background-color: orange;
+}
+
+.table__tr--typeFighting {
+    background-color: orangered;
+}
+
+.table__tr--typeFairy {
+    background-color: pink;
+}
+
+.table__tr--typePsychic {
+    background-color: indianred;
+}
+
+.table__tr--typePoison {
+    background-color: violet;
+}
+
+.table__tr--typeDragon {
+    background-color: mediumorchid;
+}
+
+.table__tr--typeGhost {
+    background-color: rebeccapurple;
+}
+
+.table__tr--typeDark {
+    background-color: saddlebrown;
 }
