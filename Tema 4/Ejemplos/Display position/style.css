@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+}
+
+.body__container {
+    width: 100%; /*Unidad de medida % -> Medida que toma de referencia el padre directo*/
+    height: auto; /*Unidad de medida auto -> Medida que se adapta al contenido*/
+    background-color: black;
+}
+
+.container__section {
+    position: relative;
+    height: 33vh; /* vh: Medida que toma de referencia Viewport Height */
+}
+
+.section__box {
+    height: 50px;
+    width: 50px;
+    
+    max-height: 100%;
+    max-width: 50px;
+
+    background-color: rgb(49, 49, 49);
+}
+
+.container__section--aqua {
+    background-color: aqua;
+}
+
+.section__box--0-0 {
+    background-color: yellow;
+
+}
+.section__box--0-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: brown;
+}
+.section__box--0-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: beige;
+
+}
+
+
+.container__section--brown {
+    background-color: chocolate;
+}
+
+.section__box--1-0 {
+    background-color: blue;
+}
+.section__box--1-1 {
+    background-color: rgb(205, 50, 182);
+}
+.section__box--1-2 {
+    background-color: greenyellow;
+}
+
+.container__section--blueviolet {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section__box--2-0 {
+    background-color: red;
+}
+.section__box--2-1 {
+    background-color: yellow;
+}
+.section__box--2-2 {
+    background-color: blue;
+}
+
+
+.container__section--green {
+    background-color: green;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__box--3-0 {
+    background-color: red;
+}
+.section__box--3-1 {
+    background-color: white;
+}
+.section__box--3-2 {
+    background-color: red;
+}
+
+.container__section--blue {
+    background-color: blue;
+}
+.section__box--4-0 {
+    background-color: red;
+}
+.section__box--4-1 {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+.section__box--4-2 {
+    background-color: rgb(255, 255, 0);
+}
+
+.container__section--orange {
+    background-color: orange;
+    display: flex;
+}
+.section__box--5-0 {
+    background-color: black;
+}
+.section__box--5-1 {
+    background-color: white;
+}
+.section__box--5-2 {
+    background-color: red;
+}
+
+.container__section--red {
+    background-color: red;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.section__box--6-0 {
+    background-color: green;
+}
+.section__box--6-1 {
+    background-color: white;
+}
+.section__box--6-2 {
+    background-color: green;
+}
+
+.container__section--black {
+    background-color: black;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.section__box--7-0 {
+    background-color: indigo;
+}
+.section__box--7-1 {
+    background-color: pink;
+}
+.section__box--7-2 {
+    background-color: wheat;
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+}
