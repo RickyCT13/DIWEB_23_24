@@ -2,8 +2,15 @@ body {
     margin: 0;
 }
 
+body, main {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
 section {
-    position:
+    position: relative;
+    height: 33vh;
 }
 
 .section__div {
@@ -23,121 +30,151 @@ section {
 }
 
 .section__div--box-0-1 {
-    
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .section__div--box-0-2 {
-    
+    background-color: brown;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .main__section--section-1 {
-    background-color: ;
+    background-color: gainsboro;
+    justify-content: flex-start;
 }
 
 .section__div--box-1-0 {
-
+    background-color: blue;
 }
 
 .section__div--box-1-1 {
-    
+    background-color: violet;
 }
 
 .section__div--box-1-2 {
-    
+    background-color: greenyellow;
 }
 
 .main__section--section-2 {
-    background-color: ;
+    background-color: darkorchid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .section__div--box-2-0 {
-
+    background-color: red;
 }
 
 .section__div--box-2-1 {
-    
+    background-color: yellow;
 }
 
 .section__div--box-2-2 {
-    
+    background-color: blue;
 }
 
 .main__section--section-3 {
-    background-color: ;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .section__div--box-3-0 {
-
+    background-color: red;
 }
 
 .section__div--box-3-1 {
-    
+    background-color: white;
 }
 
 .section__div--box-3-2 {
-    
+    background-color: red;
 }
 
 .main__section--section-4 {
-    background-color: ;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
 }
 
 .section__div--box-4-0 {
-
+    background-color: red;
 }
 
 .section__div--box-4-1 {
-    
+    background-color: yellow;
 }
 
 .section__div--box-4-2 {
-    
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .main__section--section-5 {
-    background-color: ;
+    background-color: orange;
+    display: flex;
 }
 
 .section__div--box-5-0 {
-
+    background-color: black;
 }
 
 .section__div--box-5-1 {
-    
+    background-color: white;
 }
 
 .section__div--box-5-2 {
-    
+    background-color: red;
 }
 
 .main__section--section-6 {
-    background-color: ;
+    background-color: red;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .section__div--box-6-0 {
-
+    background-color: green;
 }
 
 .section__div--box-6-1 {
-    
+    background-color: white;
 }
 
 .section__div--box-6-2 {
-    
+    background-color: green;
 }
 
 .main__section--section-7 {
-    background-color: ;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .section__div--box-7-0 {
-
+    background-color: blueviolet;
 }
 
 .section__div--box-7-1 {
-    
+    background-color: pink;
 }
 
 .section__div--box-7-2 {
-    
+    background-color: beige;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
