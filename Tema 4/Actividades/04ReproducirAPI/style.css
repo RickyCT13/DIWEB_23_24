@@ -3,35 +3,26 @@ body {
     margin: 0;
 }
 
-.body__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 72rem;
-    margin: 0 auto;
-}
-
-.container__header {
+#siteHeader {
     background-color: tomato;
+}
+
+.header--formatElements {
+    margin: 0 auto;
+    height: 3rem;
+    max-width: 72rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    height: 3em;
-
+    align-items: stretch;
 }
 
-.header__nav {
-    margin: auto 0;
+.a--toMainSite {
+    padding: 0 1em;
 }
 
-.nav__a--headerNavElement {
-    height: 100%;
+nav, a {
     color: white;
     text-decoration: none;
-    padding: 0 1em;
-    
-}
-
-.nav__a--headerNavElement:hover {
-    background-color: salmon;
+    text-align: center;
+    padding: 0.25em 0.5em;
 }
