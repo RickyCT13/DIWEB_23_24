@@ -1,0 +1,37 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.body__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.container__header {
+    background-color: tomato;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3em;
+
+}
+
+.header__nav {
+    margin: auto 0;
+}
+
+.nav__a--headerNavElement {
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 0 1em;
+    
+}
+
+.nav__a--headerNavElement:hover {
+    background-color: salmon;
+}
