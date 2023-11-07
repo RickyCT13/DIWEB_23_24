@@ -1,0 +1,10 @@
+@import url("styleDesktop.css");
+@import url("styleLaptop.css");
+@import url("styleMobile.css");
+
+
+
+body {
+    margin: 0;
+}
+
