@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(250, 250, 250);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ef5350;
+}
+
+.header__headerDiv {
+    height: 50px;
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.headerDiv__logoDiv {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.headerDiv__logoDiv img {
+    height: 45px;
+    padding: 5px;
+}
+
+.headerDiv__logoDiv:hover {
+    background-color: #e94141;
+}
+
+.header__headerNav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.header__headerNav a {
+    text-decoration: none;
+    color: white;
+}
+
+.headerNav__div--navElement {
+    padding: 15px;
+}
+
+.headerNav__div--navElement:hover {
+    background-color: #e94141;
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+.headerNav__div--navElement h4 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.main {
+    justify-content: center;
+}
+
+.main__div {
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+.main__contentNav {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: calc(100vh);
+    align-items: baseline;
+    width: 250px;
+    padding: 0 1rem;
+}
+
+.main__contentNav h3 {
+    margin-left: 15px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.main__contentNav h5 {
+    margin-left: 15px;
+    margin-top: -20px;
+    font-weight: 400;
+}
+
+.main__contentNav h5 hr {
+    margin-right: 120px;
+}
+
+.main__contentNav a {
+    text-decoration: none;
+}
+
+.main__contentNav a:hover {
+    text-decoration: underline;
+    background-color: aliceblue;
+}
+
+.main__content {
+    background-color: white;
+    padding: 0 1rem;
+}
+
+.content__info {
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.main__content p {
+    font-weight: 400;
+}
+
+.main__content a {
+    text-decoration: none;
+}
+
+.main__content a:hover {
+    text-decoration: underline;
+    background-color: aliceblue;
+}
+
+.main__content hr {
+    margin-right: 15px;
+}
+
+.info__GETcode {
+    font-size: large;
+}
+
+.info__GET {
+    background-color: cornflowerblue;
+    padding: 5px 8px;
+    border-radius: 4px;
+    color: white;
+}
+
+.info__code {
+    background-color: aliceblue;
+    margin-right: 15px;
+    padding: 10px;
+    padding-bottom: 0;
+    font-weight: 400;
+}
+
+.info__resourceListsSubtitle {
+    font-weight: 400;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.info__subtitle {
+    font-weight: 400;
+    color: gray;
+}
+
+.info__tabla {
+    align-items: right;
+    width: 100%;
+
+}
+
+.tabla__header {
+    font-weight: 400;
+}
+
+.tabla__info {
+    font-weight: 300;
+    color: gray;
+}
+
+.tabla__name {
+    align-items: left;
+    margin-left: 50px;
+}
