@@ -55,3 +55,7 @@ body {
 .zonaNavegacion__elemento:hover {
     background-color: rgb(177, 177, 177);
 }
+
+.hidden {
+    display: none;
+}

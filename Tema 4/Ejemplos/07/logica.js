@@ -1,24 +1,27 @@
-let i = 0;
-const onWindowResized = () => {
+const cambiarDisenio = () => {
+    const navNormal = document.querySelector("header .header__zonaNavegacion");
+    const navHamb = document.querySelector("header .header__zonaNavegacionHamb");
+
+    if (!navNormal.classList.contains("hidden")) {
+        navNormal.classList.add("hidden");
+        navHamb.classList.remove("hidden");
+    }
+};
+
+const cambiarDisenio2 = () => {
+    const navNormal = document.querySelector("header .header__zonaNavegacion");
+    const navHamb = document.querySelector("header .header__zonaNavegacionHamb");
+
+    if (navNormal.classList.contains("hidden")) {
+        navHamb.classList.add("hidden");
+        navNormal.classList.remove("hidden");
+    }
+};
+
+window.onresize = () => {
     if (window.innerWidth <= 600) {
-        changeDesign;
+        cambiarDisenio();
+    } else {
+        cambiarDisenio2();
     }
-}
-
-const changeDesign = () => {
-    const normalNav = document.querySelector("header .header__zonaNavegacion");
-    const hambNav = document.querySelector("header .header__zonaNavegacionHamb");
-
-    if (!normalNav.classList.contains("hidden")) {
-        console.log("Mostrar nav hamburger");
-        normalNav.classList.add("hidden");
-        hambNav.classList.remove("hidden");
-    }
-    else {
-        console.log("Mostrar nav normal");
-        hambNav.classList.add("hidden");
-        normalNav.classList.remove("hidden");
-    }
-}
-
-window.onresize = onWindowResized;
+};
