@@ -9,16 +9,15 @@ const changeDesign = () => {
     const normalNav = document.querySelector("header .header__zonaNavegacion");
     const hambNav = document.querySelector("header .header__zonaNavegacionHamb");
 
-    if (normalNav.getAttribute("hidden") === null) {
+    if (!normalNav.classList.contains("hidden")) {
         console.log("Mostrar nav hamburger");
-        normalNav.setAttribute("hidden", "true");
-        normalNav.style.display = "none";
-        hambNav.removeAttribute("hidden");
+        normalNav.classList.add("hidden");
+        hambNav.classList.remove("hidden");
     }
     else {
         console.log("Mostrar nav normal");
-        hambNav.setAttribute("hidden", "true");
-        normalNav.removeAttribute("hidden");
+        hambNav.classList.add("hidden");
+        normalNav.classList.remove("hidden");
     }
 }
 
