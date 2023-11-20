@@ -1,0 +1,29 @@
+/*
+    Uso de variables
+    Sintaxis:
+        $nombreVariable: valor;
+*/
+
+$primaryColor: #F0F0F0;
+$secondaryColor: #0F0F0F;
+
+body {
+    background-color: $primaryColor;
+    margin: 0;
+}
+
+.header {
+    height: 10vh;
+    background-color: $secondaryColor;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header__div {
+        height: 100%;
+        width: 3em;
+        color: $primaryColor;
+        padding: 10px;
+    }
+}

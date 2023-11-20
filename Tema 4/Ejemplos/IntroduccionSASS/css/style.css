@@ -1,0 +1,25 @@
+/*
+    Uso de variables
+    Sintaxis:
+        $nombreVariable: valor;
+*/
+body {
+  background-color: #F0F0F0;
+  margin: 0;
+}
+
+.header {
+  height: 10vh;
+  background-color: #0F0F0F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__div {
+  height: 100%;
+  width: 3em;
+  color: #F0F0F0;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
