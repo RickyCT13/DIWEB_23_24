@@ -1,0 +1,48 @@
+/* Funcion para cambiar el fondo */
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #000000;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.header h1 {
+  grid-column: 3/11;
+}
+
+.navBar {
+  background-color: #A2A2A2;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.navBar div {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.navBar div a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1em;
+}
+.navBar div a:hover {
+  border-bottom: 2px solid #B00000;
+}
+
+.mainContent {
+  background-color: #FFFFFF;
+  color: #000000;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.mainContent .mainContent__publicacion {
+  grid-column: 3/11;
+}
+
+/*# sourceMappingURL=style.css.map */

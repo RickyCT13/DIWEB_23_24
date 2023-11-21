@@ -1,0 +1,69 @@
+$colorFondo: #FFFFFF;
+$colorFondoHeader: #000000;
+$colorFondoNav: #A2A2A2;
+
+$colorLetra: #000000;
+$colorLetraHeader: #FFFFFF;
+$colorLetraNav: #222222;
+
+$colorBordeElementoNav: #B00000;
+
+/* Funcion para cambiar el fondo */
+@mixin cambiarFondoYLetra($colorNuevoFondo: #FFFFFF, $colorNuevoLetra: #000000) {
+    background-color: $colorNuevoFondo;
+    color: $colorNuevoLetra;
+}
+
+@mixin establecerGrid($nColumnas: 12) {
+    display: grid;
+    grid-template-columns: repeat($nColumnas, 1fr);
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    @include cambiarFondoYLetra($colorFondoHeader, $colorLetraHeader);
+    @include establecerGrid();
+
+    h1 {
+        grid-column: 3/11;
+    }
+}
+
+.navBar {
+    @include cambiarFondoYLetra($colorFondoNav, $colorLetraNav);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    div {
+        padding-left: 1em;
+        padding-right: 1em;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            padding: 1em;
+            &:hover {
+                border-bottom: 2px solid $colorBordeElementoNav;
+            }
+        }
+    }
+
+
+}
+
+.mainContent {
+    @include cambiarFondoYLetra($colorFondo, $colorLetra);
+    @include establecerGrid();
+
+    .mainContent__publicacion {
+        grid-column: 3/11;
+    }
+}
