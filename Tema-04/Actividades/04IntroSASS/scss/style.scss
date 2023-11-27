@@ -146,8 +146,14 @@ a {
 
 #articleAuthor {
     div {
+        padding-left: 4em;
+        padding-right: 4em;
+        display: flex;
+        flex-direction: row;
         img {
             border-radius: 100%;
+            width: 100px;
+            height: 100px;
         }
     }
 }
