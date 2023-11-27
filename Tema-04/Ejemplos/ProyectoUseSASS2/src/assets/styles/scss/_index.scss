@@ -1,0 +1,63 @@
+h1,
+h2,
+h3,
+h4,
+a,
+div {
+    font-family: $sansSerifTypography;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    height: 10vh; // 10% de altura de viewport
+
+    background-color: $headerBgColor;
+    color: $headerTextColor;
+    font-family: $sansSerifTypography;
+
+    .header__title {
+        grid-column: 2/9;
+        height: 100%;
+
+        background-color: red;
+    }
+
+    .header__nav {
+        grid-column: 9/12;
+        height: 100%;
+
+        background-color: blue;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .nav__hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+
+            .nav__span {
+                width: 30px;
+                height: 4px;
+                border-radius: 2px;
+                margin: 2px;
+
+                background-color: black;
+                transition: all 0.5s ease-in;
+            }
+
+            &:hover {
+                .nav__span:nth-child(2) {
+                    width: 50%;
+                    background-color: red;
+                }
+            }
+        }
+    }
+}
