@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* Importar variables y estilos de otras páginas */
+/* Importar variables (colores) */
+@import url("variables");
+/* Importar estilos para cada página */
+@import url("index");
+@import url("resumen");
+@import url("tipografia");
+@import url("iconografia");
+
+/*# sourceMappingURL=style.css.map */
