@@ -1,4 +1,55 @@
+
+body {
+    background-color: $color1;
+    font-family: $fontFamilySansSerif;
+}
+
+p {
+    font-family: $fontFamilySerif;
+}
 .header {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: $color2;
+    height: 7rem;
+
+    .header__title {
+        grid-column: 2/6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color3;
+            h1 {
+                font-size: 2.5em;
+                transition: all 0.3s ease-in-out;
+            }
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .header__nav {
+        grid-column: 6/12;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $color7;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            &:hover, &[active] {
+                h3 {
+                    border-bottom: 3px solid $color3;
+                    transition: all 0.1s ease-in;
+                }
+            }
+        }
+    }
+    
 }

@@ -1,11 +1,104 @@
 @charset "UTF-8";
 /* Importar variables y estilos de otras páginas */
 /* Importar variables (colores) */
-@import url("variables");
+/* Colores primarios del sitio web */
+/* Importar fuentes con y sin serifa */
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+/* Definición de familias */
 /* Importar estilos para cada página */
-@import url("index");
-@import url("resumen");
-@import url("tipografia");
-@import url("iconografia");
+body {
+  background-color: #f3f0ff;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Lora", serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #A29FD1;
+  height: 7rem;
+}
+.header .header__title {
+  grid-column: 2/6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header .header__title:hover {
+  background-color: #7776BC;
+  transition: all 0.3s ease-in-out;
+}
+.header .header__title:hover h1 {
+  font-size: 2.5em;
+  transition: all 0.3s ease-in-out;
+}
+.header .header__nav {
+  grid-column: 6/12;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .header__nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.header .header__nav a:hover h3, .header .header__nav a[active] h3 {
+  border-bottom: 3px solid #7776BC;
+  transition: all 0.1s ease-in;
+}
+
+.contentArea__colorPalette {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+.contentArea__colorPalette .colorPalette__colors {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  border: 4px solid gold;
+}
+.contentArea__colorPalette .colorPalette__colors div {
+  width: 10%;
+  writing-mode: vertical-rl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-orientation: upright;
+}
+.contentArea__colorPalette .colorPalette__colors .colors__color1 {
+  background-color: #f3f0ff;
+}
+.contentArea__colorPalette .colorPalette__colors .colors__color2 {
+  background-color: #A29FD1;
+}
+.contentArea__colorPalette .colorPalette__colors .colors__color3 {
+  background-color: #7776BC;
+}
+.contentArea__colorPalette .colorPalette__colors .colors__color4 {
+  background-color: #565578;
+}
+.contentArea__colorPalette .colorPalette__colors .colors__color5 {
+  background-color: #3D3D3D;
+}
+.contentArea__colorPalette .colorPalette__colors .colors__color6 {
+  background-color: #343434;
+}
+.contentArea__colorPalette .colorPalette__colors .colors__color7 {
+  background-color: #000000;
+}
 
 /*# sourceMappingURL=style.css.map */

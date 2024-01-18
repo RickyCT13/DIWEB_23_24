@@ -1,0 +1,50 @@
+.contentArea__colorPalette {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    .colorPalette__text {
+
+    }
+    .colorPalette__colors {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        border: 4px solid gold;
+
+        div {
+            width:10%;
+            writing-mode: vertical-rl;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-orientation: upright;
+        }
+        
+        .colors__color1 {
+            background-color: $color1;
+        }
+        .colors__color2 {
+            background-color: $color2;
+        }
+        .colors__color3 {
+            background-color: $color3;
+        }
+        .colors__color4 {
+            background-color: $color4;
+        }
+        .colors__color5 {
+            background-color: $color5;
+        }
+        .colors__color6 {
+            background-color: $color6;
+        }
+        .colors__color7 {
+            background-color: $color7;
+        }
+    }
+}

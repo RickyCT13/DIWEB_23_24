@@ -1,10 +1,11 @@
 /* Importar variables y estilos de otras páginas */
 
 /* Importar variables (colores) */
-@import url('variables');
+@import 'variables';
 
 /* Importar estilos para cada página */
-@import url('index');
-@import url('resumen');
-@import url('tipografia');
-@import url('iconografia');
+@import 'index';
+@import 'resumen';
+@import 'colores';
+@import 'tipografia';
+@import 'iconografia';
