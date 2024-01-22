@@ -1,12 +1,27 @@
 
 body {
     background-color: $color1;
+    letter-spacing: 0.015em;
+    font-family: $fontFamilySerif;
+}
+h1, h2, h3, h4 {
     font-family: $fontFamilySansSerif;
 }
 
-p {
-    font-family: $fontFamilySerif;
+
+
+h5 {
+    font-weight: lighter;
 }
+
+h6 {
+    font-weight: light;
+}
+
+.italic {
+    font-style: italic;
+}
+
 .header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
