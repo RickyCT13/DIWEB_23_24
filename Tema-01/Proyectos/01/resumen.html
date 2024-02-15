@@ -1,63 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Proyecto Guía Estilos</title>
-    <link rel="stylesheet" href="style/css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Guía de estilos</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__title">
-            <h1>Guía de estilos</h1>
-        </div>
-
-        <nav class="header__nav">
-            <a href="index.html">
-                <h3>Inicio</h3>
-            </a>
-            <a href="resumen.html" active>
-                <h3>Resumen</h3>
-            </a>
-            <a href="colores.html">
-                <h3>Colores</h3>
-            </a>
-            <a href="tipografia.html">
-                <h3>Tipografía</h3>
-            </a>
-            <a href="iconografia.html">
-                <h3>Iconografía</h3>
-            </a>
-        </nav>
-    </header>
-    <main class="main">
-        <div class="main__contentArea">
-            <h1>Resumen</h1>
-            <h2>Público objetivo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim aspernatur quaerat ab pariatur dolorum
-                velit corrupti molestias sit quam. Officiis debitis itaque commodi accusantium. Alias dignissimos
-                tempora iste tempore optio?</p>
-            <h2>Tipo de web</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur odio nisi tempora magnam
-                ipsa esse, in quidem possimus. At laboriosam vero dolorem quaerat in iste voluptas ipsam, ea officiis!
-            </p>
-            <h2>Elementos de diseño</h2>
-            <!-- Color, repetición, cuadrícula, reglas, Movimiento, tipografía-->
-            <ol>
-                <li>Color/Repetición: Se especifica una paleta con los colores principales para la página.</li>
-                <li>Reglas: Se utiliza el interletraje/kerning </li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
-
-        </div>
-
-    </main>
-
+  <include src="./views/header.html"></include>
+  <main class="container">
+    <section class="container__backgroundImages">
+      <img class="backgroundImages__img" src="./assets/images/space-living-area-1.jpg" alt="">
+      <img class="backgroundImages__img" src="./assets/images/space-workshop-1.jpg" alt="">
+      <img class="backgroundImages__img" src="./assets/images/space-office-1.jpg" alt="">
+      <img class="backgroundImages__img" src="./assets/images/space-server-room-1.jpg" alt="">
+    </section>
+    <h2>Hola</h2>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 
 </html>

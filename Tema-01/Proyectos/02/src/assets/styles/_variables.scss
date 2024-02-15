@@ -1,0 +1,22 @@
+/* Colores primarios del sitio web */
+$color1: #f3f0ff;
+$color2: #CDC7E5;
+$color2: #A29FD1;
+$color3: #7776BC;
+$color4: #565578;
+$color5: #3D3D3D;
+$color6: #343434;
+$color7: #000000;
+
+
+/* Importar fuentes con y sin serifa */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'Alpha Centauri';
+    src: url('../fonts/Alphacentauri-MVY4p.ttf');
+}
+
+/* Definición de familias */
+$fontFamilySerif: 'Lora', serif;
+$fontFamilySansSerif: 'Montserrat', sans-serif;
