@@ -1,11 +1,14 @@
-.container__backgroundImages {
+.backgroundImages {
     width: 100vw;
+    height: 100vh;
+    position: absolute;
     display: flex;
     flex-direction: row;
+    z-index: -10;
     div {
         width: 25vw;
-        height: 100vh;
-        opacity: 0.5; /* Adjust as needed */
+        height: 100%;
+        opacity: 0.65; /* Adjust as needed */
         z-index: -1; /* Ensures the images stay behind content */
         &:nth-child(1) {
             background-size: cover;

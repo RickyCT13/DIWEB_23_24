@@ -1,12 +1,13 @@
 /* Colores primarios del sitio web */
-$color1: #f3f0ff;
-$color2: #CDC7E5;
-$color2: #A29FD1;
-$color3: #7776BC;
-$color4: #565578;
-$color5: #3D3D3D;
-$color6: #343434;
-$color7: #000000;
+$color1: #EDEDED;
+$color2: #BFBFBF;
+$color3: #A8A8A8;
+$color4: #919191;
+$color4transparent: transparentize($color: $color4, $amount: 0.5);
+$color5: #7A7A7A;
+$color6: #636363;
+$color7: #343434;
+
 
 
 /* Importar fuentes con y sin serifa */
