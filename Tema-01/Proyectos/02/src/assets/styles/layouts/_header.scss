@@ -1,6 +1,12 @@
 .header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    background-color: transparentize($color: $color6, $amount: 0.15);
+
+    @media all and (max-width: 850px) {
+        display: flex;
+        flex-direction: column;
+    }
     
     .header__titleArea {
         grid-column: 2/6;
@@ -11,14 +17,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        background-color: $color4transparent;
-        border-radius: 50;
         img {
             width: 100px;
             height: auto;
-            @media all and (max-width: 500px) {
-                display: none;
-            }
         }
         h1 {
             font-family: "Alpha Centauri", sans-serif;
@@ -32,23 +33,22 @@
         transition: all 0.25s ease-in;
     }
     .header__navArea {
-        grid-column: 7/11;
+        margin: 0.5em;
+        grid-column: 7/12;
         @media all and (max-width: 850px) {
             grid-column: 8/12;
         }
         padding: 1em;
-        @media all {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
 
-        @media all and (max-width: 1600px) {
+        @media all and ((max-width: 1500px)) {
             flex-direction: column;
         }
 
-        background-color: $color4transparent;
+        background-color: $color5transparent;
         border-radius: 20;
         font-family: "Alpha Centauri", sans-serif;
         .navArea__element {

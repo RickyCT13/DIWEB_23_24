@@ -3,13 +3,19 @@
   margin: 0;
 }
 body {
-  background-color: $color4;
+  background-color: $colorBackground;
 }
 
 .container {
+  margin: 2.5em;
+  padding: 1em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  .container__welcome {
-    grid-column: 2/11;
+  background-color: $color1;
+  .container__section {
+    padding: 1em;
+    grid-column: 3/11;
+    background-color: $color2;
+    
   }
 }
