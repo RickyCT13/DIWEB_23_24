@@ -1,7 +1,115 @@
 .index__main {
-    background-image: url("../images/background-image.webp");
-    background-position: 0%;
-    z-index: -1;
-    object-fit: cover;
-    background-repeat: no-repeat;
+    
+
+    .main__picture {
+
+        overflow: hidden;
+        max-height: 90vh;
+
+        .img {
+            width: 100%;
+            height: auto;   
+        }
+
+        .video {
+            width: minmax(60%, 100%);
+        }
+    }
+}
+
+.main__tabs {
+
+    padding: 1em;
+
+    .tabs__botonesTab {
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .botonesTab__pestana {
+
+            margin-right: 1em;
+            padding: 1em;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            
+        }
+        .botonesTab__pestana:hover {
+
+            background-color: $ubriWeb-corporate-hover;
+            
+            
+        }
+
+        .activo {
+            background-color: $ubriWeb-corporate;
+        }
+        .activo:hover {
+            background-color: $ubriWeb-corporate;
+        }
+
+
+    }
+
+    .tabs__contenedorTexto {
+        position: relative;
+        overflow: hidden;
+        min-height: 20vh;
+
+        .contenedorTexto__bloque {
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+
+        .activo {
+            opacity: 1;
+        }
+
+    }
+    
+
+}
+
+.main__acordeon {
+
+
+    background-color: cadetblue;
+    padding: 1em;
+
+    h2,p {
+        margin: 0;
+    }
+
+    .acordeon__divContenedor {
+
+        background-color: chocolate;
+        margin: 0 0 1em;
+        @include neo(1, 1em, 1em);
+
+        .divContenedor__titulo {
+            background-color: chartreuse;
+            padding: 1rem;
+
+            @include neo(1, 1em, 1em);
+        }
+
+        .divContenedor__contenido {
+            background-color: blueviolet;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+
+        .divContenedor__contenido--activo {
+            padding: 1rem;
+            min-height: 4rem;
+            overflow: auto;
+        }
+
+    }
+
 }

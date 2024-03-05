@@ -21,7 +21,14 @@
       }
     }
   },
-
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "author1": {
+    "name": "Diego Linares",
+    "email": "dlinort062@g.educaand.es"
+  },
   "license": "MIT",
   "homepage": "",
   "devDependencies": {
