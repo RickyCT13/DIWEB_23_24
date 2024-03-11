@@ -21,7 +21,12 @@ p {
 }
 
 a {
-  
+  text-decoration: none;
+  color: $color6;
+}
+
+.italic {
+  font-style: italic;
 }
 
 
