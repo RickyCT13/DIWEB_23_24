@@ -6,16 +6,37 @@ body {
   background-color: $colorBackground;
 }
 
+h1, h2, h3, h4 {
+  font-family: $fontFamilySansSerif;
+}
+h1 {
+  font-size: xx-large;
+}
+h5, h6 {
+  font-weight: 100;
+}
+
+p {
+  font-family: $fontFamilySerif;
+}
+
+a {
+  
+}
+
+
 .container {
   margin: 2.5em;
   padding: 1em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background-color: $color1;
+  border-radius: 10px;
   .container__section {
     padding: 1em;
     grid-column: 3/11;
     background-color: $color2;
+    border-radius: 10px;
     
   }
 }
