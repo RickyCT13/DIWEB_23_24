@@ -1,12 +1,14 @@
 .header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-color: $color7;
+    background-color: $color8;
 
     @media all and (max-width: 850px) {
         display: flex;
         flex-direction: column;
     }
+
+    cursor: pointer;
     
     .header__titleArea {
         margin: 0.5em;
@@ -26,14 +28,10 @@
         h1 {
             font-family: $fontFamilyTitulo;
             font-size: 30;
-            color: $color2;
+            color: $color1;
         }
         &:hover {
-            background-color: $color6;
-            
-            color: $color2;
-            cursor: pointer;
-            transition: all 0.25s ease-in;
+            background-color: $color7;
         }
         transition: all 0.25s ease-in;
     }
@@ -54,14 +52,14 @@
             flex-direction: column;
         }
 
-        background-color: rgba($color: #000000, $alpha: 0);
+        
         border-radius: 20;
-        font-family: "Alpha Centauri", sans-serif;
+        font-family: $fontFamilyTitulo;
 
         &:hover {
-            background-color: rgba($color: #000000, $alpha: 0.2);
+            background-color: $color7;
         }
-        transition: all 0.15s ease;
+        transition: all 0.25s ease;
         .navArea__element {
             padding: 0.5em;
             margin: 0.25em;
@@ -71,18 +69,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: $color2;
+            background-color: initial;
+            color: $color1;
             text-decoration: none;
             font-size: large;
             border-radius: 20;
 
             &:hover {
-                background-color: $color6;
-                
-                cursor: pointer;
-                transition: all 0.15s ease-in;
+                background-color: $color8;
             }
-            transition: all 0.15s ease-out;
+            transition: all 0.15s ease-in;
             
         }
         

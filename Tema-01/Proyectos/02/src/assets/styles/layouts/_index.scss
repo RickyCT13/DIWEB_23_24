@@ -3,7 +3,8 @@
   margin: 0;
 }
 body {
-  background-color: $colorBackground;
+  background-color: $color8;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
@@ -22,7 +23,18 @@ p {
 
 a {
   text-decoration: none;
-  color: $color6;
+  background-color: $color3;
+  color: $color8;
+  padding: 0 0.25em;
+  border-radius: 5;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color5;
+    color: $color2;
+  }
+  transition: all 0.15s ease;
 }
 
 .italic {
@@ -37,6 +49,7 @@ a {
   grid-template-columns: repeat(12, 1fr);
   background-color: $color1;
   border-radius: 10px;
+
   .container__section {
     padding: 1em;
     grid-column: 3/11;

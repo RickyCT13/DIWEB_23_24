@@ -1,0 +1,15 @@
+.section__icons {
+    display: flex;
+    flex-flow: row wrap;
+
+    div {
+        padding: 0.5em;
+        img {
+            width: 100px;
+            height: auto;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
