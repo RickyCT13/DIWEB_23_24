@@ -1,7 +1,11 @@
-.li--serif {
+.font-title {
+    font-family: $fontFamilyTitulo;
+}
+
+.font-serif {
     font-family: $fontFamilySerif;
 }
 
-.li--sansSerif {
+.font-sansSerif {
     font-family: $fontFamilySansSerif;
 }

@@ -7,27 +7,22 @@
     z-index: -10;
     div {
         width: 25vw;
-        height: 100%;
+        height: 100vh;
         opacity: 0.65; /* Adjust as needed */
         z-index: -1; /* Ensures the images stay behind content */
-        &:nth-child(1) {
-            background-size: cover;
+        background-size: cover;
             background-repeat: no-repeat;
+
+        &:nth-child(1) {
             background-image: url("../images/space-living-area-1.jpg");
         }
         &:nth-child(2) {
-            background-size: cover;
-            background-repeat: no-repeat;
             background-image: url("../images/space-workshop-1.jpg");
         }
         &:nth-child(3) {
-            background-size: cover;
-            background-repeat: no-repeat;
             background-image: url("../images/space-office-1.jpg");
         }
         &:nth-child(4) {
-            background-size: cover;
-            background-repeat: no-repeat;
             background-image: url("../images/space-server-room-1.jpg");
         }
     }

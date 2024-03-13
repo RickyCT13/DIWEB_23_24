@@ -13,15 +13,14 @@ $colorBodyText: $softBlack;
 
 
 $color1: #EDEDED;
-$color2: #e9e9e9;
-$color3: #A8A8A8;
-$color4: #919191;
-$color4transparent: transparentize($color: $color4, $amount: 0.5);
+$color2: #E9E9E9;
+$color3: #C9C9C9;
+$color4: #A8A8A8;
 $color5: #7A7A7A;
-$color5transparent: transparentize($color: $color5, $amount: 0.15);
 $color6: #636363;
 $color7: #343434;
-$colorBackground: #000000;
+$color8: #0E1111;
+
 
 
 
@@ -34,5 +33,6 @@ $colorBackground: #000000;
 }
 
 /* Definición de familias */
+$fontFamilyTitulo: "Alpha Centauri", sans-serif;
 $fontFamilySerif: 'Lora', serif;
 $fontFamilySansSerif: 'Montserrat', sans-serif;

@@ -1,44 +1,53 @@
-.contentArea__colorPalette {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    .colorPalette__text {
+.container__colorPalette {
+    grid-column: 3/11;
+    padding: 1em;
+    background-color: $color2;
+    border-radius: 10px;
+    min-height: 30vh;
+    max-height: auto;
+    max-width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 
-    }
-    .colorPalette__colors {
+    .colorPalette__color {
         width: 100%;
         height: 100%;
-        
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-        div {
-            font-family: $fontFamilySansSerif;
+        h2 {
             writing-mode: vertical-rl;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
         }
         
-        .colors__color1 {
+        &:nth-child(1) {
             background-color: $color1;
         }
-        .colors__color2 {
+        &:nth-child(2) {
             background-color: $color2;
         }
-        .colors__color3 {
+        &:nth-child(3) {
             background-color: $color3;
         }
-        .colors__color4 {
+        &:nth-child(4) {
             background-color: $color4;
+            color: $color1;
         }
-        .colors__color5 {
+        &:nth-child(5) {
             background-color: $color5;
         }
-        .colors__color6 {
+        &:nth-child(6) {
             background-color: $color6;
+            color: $color1;
+        }
+        &:nth-child(7) {
+            background-color: $color7;
+            color: $color1;
+        }
+        &:nth-child(8) {
+            background-color: $color8;
+            color: $color1;
         }
     }
 }
